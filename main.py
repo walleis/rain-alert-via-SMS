@@ -3,16 +3,16 @@ from twilio.rest import Client
 
 # API keys and auth tokens.
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/forecast" # OpenWeather API endpoint
-API_KEY = "724c91df695389ce582e9a11db8ecd09" # OpenWeather API Key
+API_KEY = "OPENWEATHER API KEY" # OpenWeather API Key
 
-ACCOUNT_SID = "AC133a9dd29e7fc6b519813fdabf5e3860" # Twilio account ID
-AUTH_TOKEN = "e1181139ff3cde52921e25f61b8a7633" # Twilio auth token
+ACCOUNT_SID = "TWILIO ACCOUNT SID" # Twilio account ID
+AUTH_TOKEN = "TWILIO AUTH TOKEN" # Twilio auth token
 
 
 # Params for the OpenWeather.
 weather_params = {
-    "lat": -22.908333,
-    "lon": -43.196388,
+    "lat": YOUR CITY LATITUDE,
+    "lon": YOUR CITY LONGITUDE,
     "appid": api_key,
     "cnt": 4,
 }
@@ -36,7 +36,7 @@ if will_rain:
     client = Client(account_sid, auth_token) # Logging in Twilio
     message = client.messages.create(
         body="It is going to rain today! 🌧️\nBring an umbrella!☔", # SMS Message
-        from_="+12317511937", # Number from Twilio
-        to="+5521970135600", # Your phone number
+        from_="TWILIO PHONE NUMBER", # Number from Twilio
+        to="YOUR PHONE NUMBER", # Your phone number
     )
     print(message.status)
