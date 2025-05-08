@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Python script checks the weather forecast for a specific location (Rio de Janeiro, Brazil) using the OpenWeatherMap API. If the forecast indicates rain within the next few hours, the script sends an SMS notification to a specified phone number via the Twilio API, reminding the user to bring an umbrella.
+This Python script checks the weather forecast for a specific location using the OpenWeatherMap API. If the forecast indicates rain within the next few hours, the script sends an SMS notification to a specified phone number via the Twilio API, reminding the user to bring an umbrella.
 
 ## Features
 
